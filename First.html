@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture_7_Display_Grid</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #full-articles {
+    display: grid;
+    grid-template-columns: auto 80% auto;
+    grid-template: blue red blue;
+}
+
+p{
+     background-color: white;
+     grid-column-start: 2;
+    color: gray;
+    font-size: 4rem;
+   
+}
+
+</style>
+<body>
+    <nav class="border-black full-grid">
+        <a href="index.html">Home</a>
+        <a href="First.html">Columuns</a>
+        <a href="Second.html">Rows</a>
+        <a href="Third.html">Nested</a>
+    </nav>
+
+
+
+    <div id="full-articles">
+        
+        <p> 80% Where is the color on the sides?</p>
+               
+    </div>
+    <br>
+    <div id="full-articles">
+        
+        <p> 80% Where is the color on the sides?</p>
+               
+    </div>
+    
+</body>
+</html>
